@@ -32,6 +32,21 @@ import Nimble
 
 class BoardSpec: QuickSpec {
   override func spec() {
+    
+    var board : Board!
+    
+    beforeEach{
+        board = Board()
+    }
+    
+    describe("playing"){
+        context("a single move"){
+            it("should switch to nought"){
+                try! board.playRandom()
+                expect(board.state).to(equal(.playing(.nought)))
+            }
+        }
+    }
 
   }
 }
