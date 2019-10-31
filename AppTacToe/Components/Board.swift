@@ -132,6 +132,7 @@ class Board {
       // Columns
       [1, 4, 7],
       [2, 5, 8],
+      [0, 3, 6],
 
       // Diagnoals
       [0, 4, 8],
